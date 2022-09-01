@@ -2,7 +2,7 @@
 
 namespace Infrastructure.Core.Events;
 
-internal class EventBus : IEventBus
+public class EventBus : IEventBus
 {
     private readonly IMediator _mediator;
 
