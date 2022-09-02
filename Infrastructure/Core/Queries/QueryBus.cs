@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Infrastructure.Core.Commands;
+namespace Infrastructure.Core.Queries;
 
 public class QueryBus : IQueryBus
 {
