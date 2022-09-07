@@ -4,3 +4,7 @@ global using System.Linq;
 global using System.Text;
 global using System.Threading.Tasks;
 global using System.Net;
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.AspNetCore.Builder;
+global using Microsoft.Extensions.Logging;
+global using Newtonsoft.Json;

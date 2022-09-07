@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using FluentValidation.AspNetCore;
+using Infrastructure.Common.Middlewares;
 using Infrastructure.Core.Commands;
 using Infrastructure.Core.Events;
 using Infrastructure.Core.Queries;
@@ -31,6 +32,7 @@ public static class CoreExtensions
         services.AddValidatorsFromAssemblies(assemblies);
         services.AddHealthChecks();
         services.AddControllers();
+        services.AddScoped<ErrorHandlingMiddleware>();
         //services.AddFluentValidationAutoValidation(config =>
         //{
         //    config.DisableDataAnnotationsValidation = true;
